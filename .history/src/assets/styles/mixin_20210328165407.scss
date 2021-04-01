@@ -1,0 +1,10 @@
+$ratio: 375 / 10;
+@function px2rem($px) {
+    @return $px / $ratio+rem;
+}
+
+// center会做一个居中的显示，所以我们就使用flex布局
+@mixin center {
+    display: flex； justify-content: center;
+    align-items: center;
+}

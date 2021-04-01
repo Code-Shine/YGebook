@@ -1,0 +1,18 @@
+$ratio: 375 / 10;
+@function px2rem($px) {
+    @return $px / $ratio+rem;
+}
+
+// center会做一个居中的显示，所以我们就使用flex布局
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// left会做一个偏左的显示
+@mixin left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
