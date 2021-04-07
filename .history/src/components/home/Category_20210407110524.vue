@@ -45,7 +45,7 @@
         return categoryText(category, this)
       },
       showBookList() {
-        this.$router.push('/bookstore/list')
+        this.$router.push('/store/list')
       }
     }
   }
