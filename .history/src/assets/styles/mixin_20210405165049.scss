@@ -1,0 +1,46 @@
+$ratio: 375 / 10;
+@function px2rem($px) {
+    @return $px / $ratio+rem;
+}
+
+// center会做一个居中的显示，所以我们就使用flex布局
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// left会做一个偏左的显示
+@mixin left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+// 省略显示的样式
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin ellipsis2($line) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.icon {
+    color: #666;
+    font-size: px2rem(16);
+}
