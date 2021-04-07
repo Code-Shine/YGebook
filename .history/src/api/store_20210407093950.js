@@ -9,20 +9,6 @@ export function home() {
         })
         // eslint-disable-next-line eol-last
 }
-
-export function flatList() {
-    return axios({
-        method: 'get',
-        url: `${process.env.VUE_APP_BOOK_URL}/book/flat-list`
-    })
-}
-
-export function list() {
-    return axios({
-        method: 'get',
-        url: `${process.env.VUE_APP_BASE_URL}/book/list`
-    })
-}
 export function detail(book) {
     return axios({
             method: 'get',

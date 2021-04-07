@@ -17,12 +17,6 @@ export function flatList() {
     })
 }
 
-export function list() {
-    return axios({
-        method: 'get',
-        url: `${process.env.VUE_APP_BASE_URL}/book/list`
-    })
-}
 export function detail(book) {
     return axios({
             method: 'get',

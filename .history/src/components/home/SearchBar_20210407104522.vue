@@ -75,8 +75,9 @@
     },
     methods: {
       search() {
+        console.log(this.searchText)
         this.$router.push({
-          path: '/bookstore/list',
+          path: '/store/list',
           query: {
             keyword: this.searchText
           }

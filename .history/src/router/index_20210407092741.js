@@ -35,19 +35,19 @@ const routes = [{
                 path: 'list',
                 component: () =>
                     // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreList.vue')
+                    import ('./views/bookstore/StoreList.vue')
             },
             {
                 path: 'detail',
                 component: () =>
                     // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreDetail.vue')
+                    import ('./views/bookstore/StoreDetail.vue')
             },
             {
                 path: 'speaking',
                 component: () =>
                     // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreSpeaking.vue')
+                    import ('./views/bookstore/StoreSpeaking.vue')
             }
         ]
     }

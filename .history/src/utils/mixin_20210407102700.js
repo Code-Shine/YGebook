@@ -135,7 +135,7 @@ export const storeHomeMixin = {
                 path: '/bookstore/detail',
                 query: {
                     fileName: book.fileName,
-                    category: book.categoryText
+                    category: book.category
 
                 }
             })

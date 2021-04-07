@@ -14,7 +14,7 @@
       <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
         <category-book :data="item"></category-book>
       </div>
-      <category class="categories" :data="categories"></category>
+      <!-- <category class="categories" :data="categories"></category> -->
     </scroll>
   </div>
 </template>

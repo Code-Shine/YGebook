@@ -32,22 +32,7 @@ const routes = [{
                     import ('../views/bookstore/StoreHome.vue')
             },
             {
-                path: 'list',
-                component: () =>
-                    // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreList.vue')
-            },
-            {
-                path: 'detail',
-                component: () =>
-                    // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreDetail.vue')
-            },
-            {
-                path: 'speaking',
-                component: () =>
-                    // eslint-disable-next-line func-call-spacing
-                    import ('../views/bookstore/StoreSpeaking.vue')
+
             }
         ]
     }

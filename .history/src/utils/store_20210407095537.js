@@ -270,5 +270,4 @@ export function categoryText(category, vue) {
         case 22:
             return vue.$t('category.statistics')
     }
-    // eslint-disable-next-line eol-last
 }

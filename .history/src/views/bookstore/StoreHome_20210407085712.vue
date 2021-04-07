@@ -10,11 +10,11 @@
       </div>
       <guess-you-like :data="guessYouLike"></guess-you-like>
       <recommend :data="recommend" class="recommend"></recommend>
-      <featured :data="featured" :titleText="$t('home.featured')" :btnText="$t('home.seeAll')" class="featured"></featured>
+      <!-- <featured :data="featured" :titleText="$t('home.featured')" :btnText="$t('home.seeAll')" class="featured"></featured> -->
       <div class="category-list-wrapper" v-for="(item, index) in categoryList" :key="index">
-        <category-book :data="item"></category-book>
+        <!-- <category-book :data="item"></category-book> -->
       </div>
-      <category class="categories" :data="categories"></category>
+      <!-- <category class="categories" :data="categories"></category> -->
     </scroll>
   </div>
 </template>
@@ -28,9 +28,6 @@ import { storeHomeMixin } from '../../utils/mixin'
 
  import GuessYouLike from '../../components/home/GuessYouLike'
   import Recommend from '../../components/home/Recommend'
-   import Featured from '../../components/home/Featured'
-    import CategoryBook from '../../components/home/CategoryBook'
-  import Category from '../../components/home/Category'
 
   export default {
   mixins: [storeHomeMixin],
@@ -39,10 +36,7 @@ import { storeHomeMixin } from '../../utils/mixin'
     Scroll,
     FlapCard,
     GuessYouLike,
-    Recommend,
-    Featured,
-    Category,
-      CategoryBook
+    Recommend
     },
     data() {
       return {

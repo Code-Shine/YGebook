@@ -18,7 +18,7 @@
       initEpub () {
         // 将nginx服务器的位置赋值给变量baseUrl,获得了电子书的链接
         const url = 'http://192.168.43.15:8888/epub/' + this.fileName + '.epub'
-        console.log(url)
+        // console.log(url)
 
         // 实例化一个book对象并将其展示
         this.book = new Epub(url)
@@ -42,8 +42,8 @@
       */
 
        const url = 'http://192.168.43.15:8888/epub/' + this.fileName + '.epub'
-        console.log(url)
-      console.log('nha')
+        // console.log(url)
+      // console.log('nha')
       console.log(this.$route.params.fileName)
        // 可以对上述代码进行精简一下，直接不用定义fileName,而是用其后面的代码代替异步后的fileName
          this.$store.dispatch('setFileName',

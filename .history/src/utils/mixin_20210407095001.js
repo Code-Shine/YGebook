@@ -1,7 +1,7 @@
 import { mapGetters, mapActions } from 'vuex'
 import { themeList, addCss, removeAllCss, getReadTimeByMinute } from './book'
 import { saveLocation } from './localStorage'
-// import { gotoBookDetail } from './store'
+import { gotoBookDetail } from './store'
 export const ebookMixin = {
     computed: {
         ...mapGetters([
@@ -131,14 +131,7 @@ export const storeHomeMixin = {
             'setFlapCardVisible'
         ]),
         showBookDetail(book) {
-            this.$router.push({
-                path: '/bookstore/detail',
-                query: {
-                    fileName: book.fileName,
-                    category: book.categoryText
-
-                }
-            })
+            gotoBookDetail(this, book)
         }
     }
     // eslint-disable-next-line eol-last
