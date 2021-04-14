@@ -38,7 +38,7 @@ export default {
   methods: {
     setFontFamily(font) {
       this.setDefaultFontFamily(font)
-      console.log('测试点')
+      // console.log('测试点')
       saveFontFamily(this.fileName, font)
       if (font === 'Default') {
         this.currentBook.rendition.themes.font('Times New Roman')
